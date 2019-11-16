@@ -1,4 +1,4 @@
-import 'package:calcular/screens/home/widget/stagger_animation.dart';
+import 'package:calculadora/screens/home/widget/stagger_animation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
 

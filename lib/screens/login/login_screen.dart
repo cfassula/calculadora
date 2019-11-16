@@ -1,17 +1,22 @@
-import 'package:calcular/screens/home/home-screen.dart';
-import 'package:calcular/screens/login/widget/form_container.dart';
-import 'package:calcular/screens/login/widget/sign_up_button.dart';
-import 'package:calcular/screens/login/widget/stagger_animation.dart';
+import 'package:calculadora/blocks/login_bloc.dart';
+import 'package:calculadora/screens/home/home-screen.dart';
+import 'package:calculadora/screens/login/widget/form_container.dart';
+import 'package:calculadora/screens/login/widget/sign_up_button.dart';
+import 'package:calculadora/screens/login/widget/stagger_animation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
 
 class LoginScreen extends StatefulWidget {
+
+
   @override
   _LoginScreenState createState() => _LoginScreenState();
 }
 
 class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStateMixin{
   AnimationController _animationController;
+
+  final _loginBloc = LoginBloc();
 
   @override
   void initState(){
@@ -58,12 +63,13 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                       child: Image.asset("images/tickicon.png",
                           width: 150, height: 150, fit: BoxFit.contain),
                     ),
-                    FormContainer(),
+                    FormContainer(loginBloc: _loginBloc,),
                     signUpButtom()
                   ],
                 ),
                 StaggerAnimation(
-                  controller: _animationController.view
+                  controller: _animationController.view,
+                  loginBloc: _loginBloc,
                 ),              
               ],
             )

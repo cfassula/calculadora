@@ -1,4 +1,4 @@
-import 'package:calcular/screens/login/login_screen.dart';
+import 'package:calculadora/screens/login/login_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());

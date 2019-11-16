@@ -1,5 +1,5 @@
 import 'package:bloc_pattern/bloc_pattern.dart';
-import 'package:calcular/validators/login_validators.dart';
+import 'package:calculadora/validators/login_validators.dart';
 import 'package:rxdart/rxdart.dart';
 
 class LoginBloc extends BlocBase with LoginValidators{
@@ -10,12 +10,14 @@ class LoginBloc extends BlocBase with LoginValidators{
   Stream<String> get outEmail => _emailController.stream.transform(validateEmail);
   Stream<String> get outPassword => _passwordController.stream.transform(validatePassword);
 
-  Stream<bool> get outSubmitVaklid => Observable.combineLatest2(
+  Function(String) get changeEmail => _emailController.sink.add;
+  Function(String) get changePassword => _passwordController.sink.add;
+
+  Stream<bool> get outSubmitValid => Observable.combineLatest2(
     outEmail, outPassword, (a,b) => true
     );
 
-  static get outsubmitted => null;
-
+  //static get outsubmitted => null;
 
   @override
   void dispose() {

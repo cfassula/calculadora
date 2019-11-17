@@ -27,6 +27,7 @@ class StaggerAnimation extends StatelessWidget {
           return InkWell(
               onTap: () {
                 snapshot.hasData ? controller.forward() : null;
+                //snapshot.hasData ? loginBloc.submit : null;
                 //controller.forward();
               },
               child: Hero(

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "745691720231",
+    "firebase_url": "https://calculadorarisco.firebaseio.com",
+    "project_id": "calculadorarisco",
+    "storage_bucket": "calculadorarisco.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745691720231:android:d3b1abde2bd6cfacc8bc02",
+        "android_client_info": {
+          "package_name": "com.example.calcular"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "745691720231-vdan4i6ntnd3vqv61esv3qcn6fktb8a3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQZDAZtQ9ozZx7UFlurGTlRHZGsNfnEQ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "745691720231-vdan4i6ntnd3vqv61esv3qcn6fktb8a3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

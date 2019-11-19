@@ -1,4 +1,5 @@
 import 'package:calculadora/screens/login/login_screen.dart';
+import 'package:calculadora/screens/signup/signup_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -10,7 +11,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Calculadora de IMC",
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      //home: LoginScreen(),
+      home: SignupScreen(),
     );
   }
 }

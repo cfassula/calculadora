@@ -30,7 +30,7 @@ class SignupScreen extends StatelessWidget {
                       padding: EdgeInsets.only(top: 10, bottom: 32),
                     ),
                     //FormContainer(loginBloc: _loginBloc,),
-                    FormContainer(signupBloc: _signupBloc,),
+                    FormContainer(signUpBloc: _signupBloc,),
                     //signUpButtom()
                   ],
                 ),

@@ -1,7 +1,8 @@
+import 'package:calculadora/screens/signup/signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class signUpButtom extends StatelessWidget {
+class SignUpButtom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FlatButton(
@@ -9,6 +10,10 @@ class signUpButtom extends StatelessWidget {
         top: 160
       ),
       onPressed: (){
+          Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context)=> SignupScreen())
+        );
+
       },      
       child: Text(
         "Não possui uma conta? Cadastre-se!",

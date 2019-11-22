@@ -23,6 +23,7 @@ class LoginBloc extends BlocBase with LoginValidators{
     outEmail, outPassword, (a,b) => true
     );
 
+
   LoginBloc(){
     FirebaseAuth.instance.onAuthStateChanged.listen((user){
       if (user != null){

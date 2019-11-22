@@ -64,7 +64,7 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                           width: 150, height: 150, fit: BoxFit.contain),
                     ),
                     FormContainer(loginBloc: _loginBloc,),
-                    signUpButtom()
+                    SignUpButtom()
                   ],
                 ),
                 StaggerAnimation(

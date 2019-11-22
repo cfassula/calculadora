@@ -25,6 +25,8 @@ class SignUpBloc extends BlocBase with SignUpValidators {
   @override
   void dispose() {
     _emailController.close();
+    _nomeController.close();
+    _passwordController.close();
   }
 
 }

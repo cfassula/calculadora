@@ -5,6 +5,11 @@ import 'package:flutter/material.dart';
 class SignupScreen extends StatelessWidget {
 
   final _signupBloc = SignUpBloc();
+  
+  SignupScreen(){
+    //Firestore.instance.collection("teste").document("teste").setData({"teste":"teste"});
+    //FirebaseAuth.instance.createUserWithEmailAndPassword(email: "cfassula@gmail.com", password: "123456768");
+  }
 
   @override
   Widget build(BuildContext context) {

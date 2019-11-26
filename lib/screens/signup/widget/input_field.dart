@@ -6,8 +6,9 @@ class InputField extends StatelessWidget {
   final IconData icon;
   final Stream<String> stream;
   final Function(String) onChanged;
+  final TextEditingController controller;
 
-  InputField({this.hint, this.obscure, this.icon, this.stream, this.onChanged});
+  InputField({this.hint, this.obscure, this.icon, this.stream, this.onChanged, this.controller});
 
   @override
   Widget build(BuildContext context) {
@@ -23,6 +24,7 @@ class InputField extends StatelessWidget {
         builder: (context, snapshot) {
           
           return TextField(
+            controller: controller,
             onChanged: onChanged,
             obscureText: obscure,
             style: TextStyle(

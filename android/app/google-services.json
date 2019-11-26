@@ -1,34 +1,42 @@
 {
   "project_info": {
-    "project_number": "745691720231",
-    "firebase_url": "https://calculadorarisco.firebaseio.com",
-    "project_id": "calculadorarisco",
-    "storage_bucket": "calculadorarisco.appspot.com"
+    "project_number": "770198095757",
+    "firebase_url": "https://riscocardiaco.firebaseio.com",
+    "project_id": "riscocardiaco",
+    "storage_bucket": "riscocardiaco.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:745691720231:android:d3b1abde2bd6cfacc8bc02",
+        "mobilesdk_app_id": "1:770198095757:android:c88b931ac86262ab59dfc4",
         "android_client_info": {
           "package_name": "com.example.calcular"
         }
       },
       "oauth_client": [
         {
-          "client_id": "745691720231-vdan4i6ntnd3vqv61esv3qcn6fktb8a3.apps.googleusercontent.com",
+          "client_id": "770198095757-i4pi5p1udea2hvms7qk61bfesr1f4ir6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.calcular",
+            "certificate_hash": "96ca16e66c3443410cc638d4451ac859cfe594af"
+          }
+        },
+        {
+          "client_id": "770198095757-so7ltb8pljnlv686oj4fgl6gg29sbrno.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCQZDAZtQ9ozZx7UFlurGTlRHZGsNfnEQ4"
+          "current_key": "AIzaSyA9oRFjTuLlcu_hTcXhM6wyPRsTVG0A8wM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "745691720231-vdan4i6ntnd3vqv61esv3qcn6fktb8a3.apps.googleusercontent.com",
+              "client_id": "770198095757-so7ltb8pljnlv686oj4fgl6gg29sbrno.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
